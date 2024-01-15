@@ -7,7 +7,7 @@ router.post(
     (req, res) => {
 
         console.log(req);
-        if (req.body.resource) {
+        if (req.body.resource.id) {
             res.status(201).json()
         } else {
             res.status(400).json({
