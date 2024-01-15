@@ -10,8 +10,8 @@ router.post(
                 "code": "ExtensionPredicateEvaluationFailed",
                 "message": "The compared field 'cart' is not present",
                 "errorByExtension": {
-                    "id": "{{extension-id}}",
-                    "key": "{{extension-key}}"
+                    "id": "f0b48b75-f375-4d26-a747-691e877bb0ff",
+                    "key": "my-extension"
                 }
             }
         )
