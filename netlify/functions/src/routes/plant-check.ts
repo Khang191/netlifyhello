@@ -6,7 +6,14 @@ router.post(
     '/plant-check',
     (req, res) => {
 
-        res.status(201).json()
+        if (req.body.id) {
+            res.status(201).json()
+        } else {
+            res.status(400).json({
+                "statusCode": 400,
+                "message": "First error message."
+            })
+        }
     }
 )
 
