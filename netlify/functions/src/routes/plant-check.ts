@@ -10,7 +10,7 @@ router.get(
             message: "ok"
         }
 
-        res.statusCode(200).json(rs)
+        res.status(200).json(req)
     }
 )
 
