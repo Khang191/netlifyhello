@@ -11,7 +11,12 @@ router.post(
             res.status(400).json({
                 statusCode: 400,
                 message: "First error message.",
-                errors: []
+                errors: [
+                    {
+                        "code": "PlantCheckError",
+                        "message": "Plant Check Error"
+                    }
+                ]
             })
         }
     }
