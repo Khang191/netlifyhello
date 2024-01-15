@@ -5,7 +5,7 @@ const router = Router()
 router.post(
     '/plant-check',
     (req, res) => {
-        if (req.body.customerEmail) {
+        if (req.body.resource) {
             res.status(201).json()
         } else {
             res.status(400).json({
