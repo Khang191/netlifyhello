@@ -6,7 +6,7 @@ router.get(
     '/plant-check',
     (req, res) => {
 
-        res.status(200)
+        res.status(200).json({})
     }
 )
 
