@@ -13,7 +13,7 @@ router.post(
                 message: "First error message.",
                 errors: [
                     {
-                        "code": "PlantCheckError",
+                        "code": "General",
                         "message": "Plant Check Error"
                     }
                 ]
