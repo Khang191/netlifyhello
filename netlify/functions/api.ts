@@ -5,6 +5,9 @@ import serverless from "serverless-http";
 
 const api = express();
 
+api.use(express.json())
+api.use(express.urlencoded({ extended: true }))
+
 api.use(cors())
 
 api.use("/api/", routes);

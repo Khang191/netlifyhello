@@ -4,7 +4,7 @@ const router = Router()
 
 router.get(
     '/hello',
-    (req, res) => res.send("Hello World! Testinggggg")
+    (req, res) => res.json({mess:"Hello World! Testinggggg"})
 )
 
 export default router
