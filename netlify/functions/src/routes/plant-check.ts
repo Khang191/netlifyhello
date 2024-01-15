@@ -6,10 +6,7 @@ router.get(
     '/plant-check',
     (req, res) => {
 
-        res.status(400).json({
-            "statusCode": 400,
-            "message": "First error message."
-        })
+        res.status(200).json({})
     }
 )
 
