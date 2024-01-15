@@ -6,7 +6,9 @@ router.post(
     '/plant-check',
     (req, res) => {
 
-        console.log(req.body);
+        const {resource: { obj }} = req.body
+
+        console.log(obj);
         if (req.body.resource.id) {
             res.status(201).json()
         } else {
