@@ -7,7 +7,7 @@ router.post(
     (req, res) => {
 
         res.status(201).json({
-            "action": "",
+            "action": "addLineItem",
             "type": "Cart",
             "id": "27b39077-aa57-48a5-b504-914f68fa44dc",
             "version": 1,
