@@ -1,5 +1,5 @@
 import { Router } from "express"
-import hello from './hello'
+import hello from './plant-check'
 
 const router = Router();
 router.use(hello);
