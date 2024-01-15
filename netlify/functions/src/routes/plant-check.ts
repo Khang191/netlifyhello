@@ -10,7 +10,8 @@ router.post(
         } else {
             res.status(400).json({
                 statusCode: 400,
-                message: "First error message."
+                message: "First error message.",
+                errors: []
             })
         }
     }
