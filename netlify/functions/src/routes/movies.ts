@@ -7,7 +7,7 @@ const movieController = new MovieController()
 const { getMoviesById } = movieController
 
 router.post(
-    '/plant-check',
+    '/movies',
     getMoviesById.bind(MovieController)
 )
 
