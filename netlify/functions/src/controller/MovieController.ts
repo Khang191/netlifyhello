@@ -18,7 +18,7 @@ class MovieController {
             }
         }
 
-        res.status(200).json(rs)
+        res.status(200).send(rs)
 
         // if (customer?.statusCode === 200 && fields?.plantCheck == 1) {
         //     res.status(400).json({
