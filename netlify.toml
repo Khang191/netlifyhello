@@ -1,7 +1,6 @@
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  included_files = ["src/files/brand_data.json"]
 [[redirects]]
   force = true
   from = "/api/*"

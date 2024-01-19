@@ -11,7 +11,7 @@ class BrandController
     async getBrands(req: Request, res: Response)
     {
         // Get data object from json file
-        const jsonBranchData = JSON.parse(fs.readFileSync(path))
+        const jsonBranchData = JSON.parse(getBrandSource())
 
         // Get request filter
         const { status, isLogoRequired, isNameRequired } = req.body
@@ -50,6 +50,26 @@ class BrandController
             data: rs
         })
     }
+}
+
+function getBrandSource() {
+    return "[\n" +
+        "    {\n" +
+        "        \"status\": \"active\",\n" +
+        "        \"name\": \"Nike\",\n" +
+        "        \"logo\": \"path_logo_nike.png\"\n" +
+        "    },\n" +
+        "    {\n" +
+        "        \"status\": \"active\",\n" +
+        "        \"name\": \"Adidas\",\n" +
+        "        \"logo\": \"path_logo_adidas.png\"\n" +
+        "    },\n" +
+        "    {\n" +
+        "        \"status\": \"active\",\n" +
+        "        \"name\": \"\",\n" +
+        "        \"logo\": \"path_logo_puma.png\"\n" +
+        "    }\n" +
+        "]"
 }
 
 export default BrandController
