@@ -1,0 +1,17 @@
+[
+    {
+        "status": "active",
+        "name": "Nike",
+        "logo": "path_logo_nike.png"
+    },
+    {
+        "status": "active",
+        "name": "Adidas",
+        "logo": "path_logo_adidas.png"
+    },
+    {
+        "status": "active",
+        "name": "",
+        "logo": "path_logo_puma.png"
+    }
+]
