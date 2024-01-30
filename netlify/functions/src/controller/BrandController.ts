@@ -55,17 +55,17 @@ class BrandController
 function getBrandSource() {
     return "[\n" +
         "    {\n" +
-        "        \"status\": \"active\",\n" +
+        "        \"status\": 1,\n" +
         "        \"name\": \"Nike\",\n" +
         "        \"logo\": \"path_logo_nike.png\"\n" +
         "    },\n" +
         "    {\n" +
-        "        \"status\": \"active\",\n" +
+        "        \"status\": 1,\n" +
         "        \"name\": \"Adidas\",\n" +
         "        \"logo\": \"path_logo_adidas.png\"\n" +
         "    },\n" +
         "    {\n" +
-        "        \"status\": \"active\",\n" +
+        "        \"status\": 0,\n" +
         "        \"name\": \"\",\n" +
         "        \"logo\": \"path_logo_puma.png\"\n" +
         "    }\n" +
